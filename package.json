@@ -1,0 +1,72 @@
+{
+  "_args": [
+    [
+      "tweetbot",
+      ""
+    ]
+  ],
+  "_from": "tweetbot@latest",
+  "_id": "tweetbot@0.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/tweetbot",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "tweetbot",
+    "raw": "tweetbot",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/tweetbot/-/tweetbot-0.0.2.tgz",
+  "_shasum": "a10747af33ac55714934605d06d68c8a33745a08",
+  "_shrinkwrap": null,
+  "_spec": "tweetbot",
+  "_where": "",
+  "author": {
+    "name": "Carlos Rodriguez"
+  },
+  "bin": {
+    "tweetbot": "./bin/start.sh",
+    "tweetbot-init": "./bin/init.sh"
+  },
+  "dependencies": {
+    "markov": "0.0.6",
+    "ntwitter": "~0.4.0",
+    "optimist": "~0.3.4",
+    "prompt": "~0.2.2"
+  },
+  "description": "Your own markov-chain-based twitter buddy.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a10747af33ac55714934605d06d68c8a33745a08",
+    "tarball": "https://registry.npmjs.org/tweetbot/-/tweetbot-0.0.2.tgz"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "markov",
+    "ai",
+    "experiment"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "carlos@s8f.org",
+      "name": "carlos8f"
+    }
+  ],
+  "name": "tweetbot",
+  "optionalDependencies": {},
+  "readme": "node-tweetbot\n-------------\n\nYour own markov-chain-based twitter buddy.\n\nIdea\n====\n\nAttach a bot to your twitter account, and have it synthesize and post tweets on\na semi-regular interval based on your timeline.\n\nInstall\n=======\n\n```bash\n$ npm install -g tweetbot\n```\n\nConfiguration\n=============\n\n- Create a new app on [https://dev.twitter.com/apps/new](dev.twitter.com), and\n  then set **Access** to **Read and Write** on the **Settings** page.\n- Request an **Access token** on the **Details** page of your app.\n- Find a writable folder on your computer, change to it, and run:\n\n    ```bash\n    $ tweetbot-init\n    ```\n- Enter the credentials when prompted.\n- Edit `tweetbot.json` to tweak defaults, if desired.\n\nUsage\n=====\n\n```bash\n$ tweetbot --conf=[path to tweetbot.json]\n```\n\nLicense\n=======\n\nMIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.2"
+}
