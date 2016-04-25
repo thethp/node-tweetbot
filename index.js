@@ -1,4 +1,4 @@
-var twitter = require('ntwitter')
+`var twitter = require('ntwitter')
   , markov = require('markov')
   , Stream = require('stream')
   ;
